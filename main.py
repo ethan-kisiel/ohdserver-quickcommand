@@ -2,14 +2,14 @@ import os
 from json import load as json_load
 
 
-def select_map():
-    pass
+def clear():
+    os.system("cls" if os.name == "nt" else "clear")
 
 
 def select_faction(
     options: list[str], map_selection: str, blufor_selection=None, is_redo=False
 ):
-    os.system("clear")
+    clear()
     if is_redo:
         print("Something went wrong, make a new selection")
     print(f"Selected Map: {map_selection}")
@@ -36,7 +36,7 @@ def select_faction(
 
 
 def main():
-    os.system("clear")
+    clear()
     try:
         with open("settings.json", "r") as settings:
             json_file = json_load(settings)
@@ -65,7 +65,7 @@ def main():
             blufor_selection = select_faction(factions, map_selection)
             opfor_selection = select_faction(factions, map_selection, blufor_selection)
 
-            os.system("clear")
+            clear()
 
             print()
             print(
