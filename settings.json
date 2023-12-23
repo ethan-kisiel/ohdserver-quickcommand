@@ -1,0 +1,17 @@
+{
+    "MAPS": [
+        "saintquentin",
+        "jazira",
+        "khafji_p"
+    ],
+
+    "FACTIONS": [
+        "BP_HDFactionInfo_DeltaForce",
+        "BP_HDFactionInfo_DeltaForce_Green",
+        "BP_HDFactionInfo_ThePhoenix",
+        "BP_HDFactionInfo_SomaliMilitia",
+        "BP_HDFactionInfo_ANZAC",
+        "BP_HDFactionInfo_FranceFL",
+        "BP_HDFactionInfo_Thailand"
+    ]
+}
